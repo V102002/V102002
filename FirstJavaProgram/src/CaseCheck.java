@@ -5,5 +5,6 @@ public class CaseCheck {
         Scanner input=new Scanner(System.in);
         String ch=input.next().trim();
         System.out.println(ch);
+        input.close();
     }
 }

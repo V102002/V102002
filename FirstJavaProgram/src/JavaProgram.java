@@ -23,5 +23,6 @@ public class JavaProgram {
                 System.out.println("c is the largest");
             }
         }
+        input.close();
     }
 }

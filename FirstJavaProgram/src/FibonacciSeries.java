@@ -16,6 +16,6 @@ public class FibonacciSeries {
         }
         System.out.println();
         System.out.println(SecondTerm);
-
+        input.close();
     }
 }

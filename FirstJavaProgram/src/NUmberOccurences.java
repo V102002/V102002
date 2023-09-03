@@ -10,12 +10,14 @@ public class NUmberOccurences {
         num=input.nextInt();
         System.out.print("Enter a number to check Occurences:");
         number=input.nextInt();
-        while (num!=0) {
+        while (num>0) {
             remainder=num%10;
             if (remainder==number) {
                 count++;
             }
             num=num/10;
         }
+        System.out.println("The number "+number+" has occured "+count+" times");
+        input.close();
     }
 }
