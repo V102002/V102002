@@ -12,10 +12,10 @@ public class NUmberOccurences {
         number=input.nextInt();
         while (num!=0) {
             remainder=num%10;
-            num=num/10;
             if (remainder==number) {
                 count++;
             }
+            num=num/10;
         }
     }
 }
