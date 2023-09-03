@@ -2,14 +2,26 @@ import java.util.Scanner;
 
 public class JavaProgram {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
-        int num1,num2,sum;
-        System.out.print("Enter number for num1:");
-        num1=input.nextInt();
-        System.out.print("Enter number for num2:");
-        num2=input.nextInt();
-        sum=num1+num2;
-        System.out.print("Sum:"+sum);
-        
+        Scanner input= new Scanner(System.in);
+        int a,b,c;
+        System.out.print("a: ");
+        a=input.nextInt();
+        System.out.print("b: ");
+        b=input.nextInt();
+        System.out.print("c: ");
+        c=input.nextInt();
+        if (a>b) {
+            if (a>c) {
+                System.out.println("a is the largest");
+            }else{
+                System.out.println("c is the largest");
+            }
+        }else if (b>a) {
+            if (b>c) {
+                System.out.println("b is the largest");
+            }else{
+                System.out.println("c is the largest");
+            }
+        }
     }
 }
