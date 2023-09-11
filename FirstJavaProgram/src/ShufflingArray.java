@@ -1,5 +1,5 @@
 public class ShufflingArray {
-    public static int[] shuffle(int[] nums, int n) {
+    static int[] shuffle(int[] nums, int n) {
         n=nums.length/2;
         int[] result=new int[nums.length];
         for (int i = 0; i < n; i++) {
@@ -8,7 +8,7 @@ public class ShufflingArray {
         }
         return result;
     }
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         ShufflingArray shufflingArray=new ShufflingArray();
         int[] nums = {1,2,3,4,4,3,2,1};
         int[] result = shufflingArray.shuffle(nums, 6);
