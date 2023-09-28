@@ -6,6 +6,7 @@ public class OrderAgnosticBinarySearch {
         int ans=oAgnosticBinarySearch(arr, target);
         System.out.println(ans);
     }
+    //order agnostic is when the array could either be in ascending or descending order
     static int oAgnosticBinarySearch(int[]arr,int target){
         int start=0;
         int end=arr.length-1;
