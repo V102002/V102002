@@ -18,14 +18,17 @@ public class SearchInRotatedArray {
             while (start<=end) {
                 int mid=start+(end-start)/2;
                 //4 cases
-                if (mid<end && arr[mid]>arr[mid+1]) {
+                if (mid<end && arr[mid]>arr[mid+1]) {//the middle element is in array and middle element is greater than its' adjacent
                     return mid;
                 }
-                 if (arr[mid]<arr[mid-1]) {
+                 if (mid>start && arr[mid]<arr[mid-1]) {
+                    /*middle element is not in index -1 and less than its lower index element*/
                     return mid-1;
-                }else if (arr[mid]<=arr[start]) {
+                }if (arr[mid]<=arr[start]) {
+                    //if the middle element is less than the start element then the start element is greater than all elements after mid
                     end=mid-1;
-                } else if(arr[start]<arr[mid]){
+                } else{
+                    //if the middle element is more than the start element then the start element is less than all elements before mid
                     start=mid+1;
                 }
             }
