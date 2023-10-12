@@ -14,12 +14,11 @@ public class Employee {
         System.out.println(ep);
         ep.raiseSalary(10);
         System.out.println(ep);
-        Employee ep2=new Employee(11, "Tom", "Clancy", 10000);
+        Employee ep2=new Employee(1, "Tom", "Clancy", 10000);
         System.out.println(ep2);
         ep2.raiseSalary(5);
         System.out.println(ep2);
         
-
     }
     public int getId(){
         return id;
